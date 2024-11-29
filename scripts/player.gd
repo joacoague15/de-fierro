@@ -1,7 +1,7 @@
 extends Node2D
 
-var speed = 240
-var boost_multiplier = 1.6 
+var speed = 20
+var boost_multiplier = 2
 
 func _process(delta):
 	var current_speed = speed

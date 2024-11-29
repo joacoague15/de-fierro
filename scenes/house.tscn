@@ -1,14 +1,53 @@
-[gd_scene load_steps=9 format=3 uid="uid://23375gdktrf3"]
+[gd_scene load_steps=15 format=3 uid="uid://23375gdktrf3"]
 
 [ext_resource type="Texture2D" uid="uid://broul5cj6rrbk" path="res://images/wall1.webp" id="1_guig8"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="2_0ps76"]
-[ext_resource type="Texture2D" uid="uid://b8jj24jgf3yef" path="res://images/CharacterSprite.png" id="3_iyq7q"]
 [ext_resource type="Texture2D" uid="uid://nw071wpwo0ye" path="res://images/Pampa1.webp" id="4_120t6"]
+[ext_resource type="Texture2D" uid="uid://uahm7kte0wbs" path="res://images/sprite_sheets/gaucho_walking/frame1.png" id="4_gtwgj"]
 [ext_resource type="Script" path="res://scripts/horse.gd" id="5_00a7k"]
 [ext_resource type="Texture2D" uid="uid://bu55wvnl2i1f4" path="res://images/Horse.png" id="5_3wycr"]
+[ext_resource type="Texture2D" uid="uid://dsemjodahn82k" path="res://images/sprite_sheets/gaucho_walking/frame2.png" id="5_jhfex"]
+[ext_resource type="Texture2D" uid="uid://m82hm1mbi38i" path="res://images/sprite_sheets/gaucho_walking/frame3.png" id="6_vo2bv"]
+[ext_resource type="Texture2D" uid="uid://6h0k04fqtdmt" path="res://images/sprite_sheets/gaucho_walking/frame4.png" id="7_707o0"]
+[ext_resource type="Texture2D" uid="uid://fsfefrib0acl" path="res://images/sprite_sheets/gaucho_walking/frame5.png" id="8_jbt33"]
+[ext_resource type="Texture2D" uid="uid://gkqjuuhu5qev" path="res://images/sprite_sheets/gaucho_walking/frame6.png" id="9_bh18k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4bbdy"]
-size = Vector2(20, 39)
+size = Vector2(17, 39)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4xwvc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_bh18k")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_gtwgj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jhfex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_vo2bv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_707o0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jbt33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bh18k")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 8.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ae15g"]
 size = Vector2(38, 2.5)
@@ -63,35 +102,38 @@ texture = ExtResource("4_120t6")
 [node name="Player" type="Node2D" parent="."]
 script = ExtResource("2_0ps76")
 
-[node name="PlayerSprite" type="Sprite2D" parent="Player"]
-position = Vector2(58, 318)
-scale = Vector2(0.04, 0.04)
-texture = ExtResource("3_iyq7q")
-
 [node name="PlayerArea2D" type="Area2D" parent="Player"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player/PlayerArea2D"]
-position = Vector2(58, 317.5)
+position = Vector2(58.5, 316)
 shape = SubResource("RectangleShape2D_4bbdy")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 offset = Vector2(160, 302)
 zoom = Vector2(3.6, 3.6)
 
+[node name="PlayerAnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+position = Vector2(64, 314)
+scale = Vector2(0.04, 0.04)
+sprite_frames = SubResource("SpriteFrames_4xwvc")
+animation = &"walk"
+
 [node name="Horse" type="Node2D" parent="."]
 script = ExtResource("5_00a7k")
 
 [node name="HorseSprite" type="Sprite2D" parent="Horse"]
-position = Vector2(28, 318)
-scale = Vector2(0.05, 0.05)
+position = Vector2(28, 314)
+scale = Vector2(0.06, 0.06)
 texture = ExtResource("5_3wycr")
 flip_h = true
 
-[node name="Area2D" type="Area2D" parent="Horse"]
+[node name="HorseArea2D" type="Area2D" parent="Horse"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse/HorseArea2D"]
 position = Vector2(29, 314)
 shape = SubResource("RectangleShape2D_ae15g")
 
-[connection signal="area_entered" from="Horse/Area2D" to="Horse" method="_on_area_2d_area_entered"]
-[connection signal="area_exited" from="Horse/Area2D" to="Horse" method="_on_area_2d_area_exited"]
+[connection signal="area_entered" from="Player/PlayerArea2D" to="Player" method="_on_player_area_2d_area_entered"]
+[connection signal="area_exited" from="Player/PlayerArea2D" to="Player" method="_on_player_area_2d_area_exited"]
+[connection signal="area_entered" from="Horse/HorseArea2D" to="Horse" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Horse/HorseArea2D" to="Horse" method="_on_area_2d_area_exited"]

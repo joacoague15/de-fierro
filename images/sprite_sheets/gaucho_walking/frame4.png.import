@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8jj24jgf3yef"
-path="res://.godot/imported/CharacterSprite.png-34c44bbace71612aeb3b81fdcfa6b389.ctex"
+uid="uid://6h0k04fqtdmt"
+path="res://.godot/imported/frame4.png-621de57f7a988af01a78d88ef86f8c4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/CharacterSprite.png"
-dest_files=["res://.godot/imported/CharacterSprite.png-34c44bbace71612aeb3b81fdcfa6b389.ctex"]
+source_file="res://images/sprite_sheets/gaucho_walking/frame4.png"
+dest_files=["res://.godot/imported/frame4.png-621de57f7a988af01a78d88ef86f8c4c.ctex"]
 
 [params]
 

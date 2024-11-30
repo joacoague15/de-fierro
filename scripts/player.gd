@@ -1,17 +1,19 @@
 extends Node2D
 
 const WALK_SPEED = 20
-const RUN_SPEED = 40
-const MOUNTED_WALK_SPEED = 80
+const RUN_SPEED = 25
+const MOUNTED_WALK_SPEED = 40
 const MOUNTED_RUN_SPEED = 120
 
 # Node references
 @onready var player_animated_sprite = $PlayerAnimatedSprite2D
+@onready var player_mounted_animated_sprite = $PlayerMountedAnimatedSprite2D
+
 @onready var horse = get_node("../Horse")
 
 # Textures
 @onready var player_mounted_texture = preload("res://images/PlayerMounted.png")
-@onready var player_texture = preload("res://images/sprite_sheets/gaucho_walking/frame6.png")
+@onready var player_idle_texture = preload("res://images/sprite_sheets/gaucho_walking/frame6.png")
 
 # State variables
 var current_speed = WALK_SPEED
@@ -52,14 +54,25 @@ func handle_movement(delta):
 		is_moving = true
 		
 	if is_moving:
-		if player_animated_sprite.animation != "walk":
-			player_animated_sprite.play("walk")
+		if mounted:
+			if player_mounted_animated_sprite.animation != "mounted_walk":
+				player_mounted_animated_sprite.play("mounted_walk")
+		else: 
+			if player_animated_sprite.animation != "walk":
+				player_animated_sprite.play("walk")
 	else:
-		if player_animated_sprite.animation != "idle":
-			player_animated_sprite.play("idle")
+		if mounted:
+			if player_mounted_animated_sprite.animation != "mounted_idle":
+				player_mounted_animated_sprite.play("mounted_idle")
+		else: 
+			if player_animated_sprite.animation != "idle":
+				player_animated_sprite.play("idle")
 			
 func handle_flip_h(mounted, direction):
-	player_animated_sprite.flip_h = (direction == "right") if mounted else (direction == "left")
+	if mounted:
+		player_mounted_animated_sprite.flip_h = (direction == "right") if mounted else (direction == "left")
+	else:
+		player_animated_sprite.flip_h = (direction == "right") if mounted else (direction == "left")
 
 func update_horse_position():
 	if mounted:
@@ -77,10 +90,12 @@ func _on_player_area_2d_area_exited(body):
 # Mounting logic
 func mount_player():
 	mounted = true
+	player_animated_sprite.visible = false
+	player_mounted_animated_sprite.visible = true
 	horse.visible = false
-	#player_animated_sprite.texture = player_mounted_texture
 
 func dismount_player():
 	mounted = false
+	player_animated_sprite.visible = true
+	player_mounted_animated_sprite.visible = false
 	horse.visible = true
-	#player_sprite.texture = player_texture

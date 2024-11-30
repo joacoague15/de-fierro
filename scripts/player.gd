@@ -49,24 +49,20 @@ func handle_movement(delta):
 		position.x += current_speed * delta
 		handle_flip_h(mounted, "right")
 	elif Input.is_action_pressed("move_left"):
+		is_moving = true
 		position.x -= current_speed * delta
 		handle_flip_h(mounted, "left")
-		is_moving = true
 		
 	if is_moving:
 		if mounted:
-			if player_mounted_animated_sprite.animation != "mounted_walk":
-				player_mounted_animated_sprite.play("mounted_walk")
+			player_mounted_animated_sprite.play("mounted_walk")
 		else: 
-			if player_animated_sprite.animation != "walk":
-				player_animated_sprite.play("walk")
+			player_animated_sprite.play("walk")
 	else:
 		if mounted:
-			if player_mounted_animated_sprite.animation != "mounted_idle":
-				player_mounted_animated_sprite.play("mounted_idle")
+			player_mounted_animated_sprite.play("mounted_idle")
 		else: 
-			if player_animated_sprite.animation != "idle":
-				player_animated_sprite.play("idle")
+			player_animated_sprite.play("idle")
 			
 func handle_flip_h(mounted, direction):
 	if mounted:

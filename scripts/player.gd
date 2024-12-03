@@ -1,9 +1,9 @@
 extends Node2D
 
 const WALK_SPEED = 20
-const RUN_SPEED = 25
+const RUN_SPEED = 30
 const MOUNTED_WALK_SPEED = 40
-const MOUNTED_RUN_SPEED = 120
+const MOUNTED_RUN_SPEED = 60
 
 # Node references
 @onready var player_animated_sprite = $PlayerAnimatedSprite2D
@@ -15,10 +15,19 @@ const MOUNTED_RUN_SPEED = 120
 @onready var player_mounted_texture = preload("res://images/PlayerMounted.png")
 @onready var player_idle_texture = preload("res://images/sprite_sheets/gaucho_walking/frame6.png")
 
+# Footsteps
+@onready var footstep_audio = $FootstepAudioStreamPlayer2D
+@onready var footstep_timer = $FootstepTimer
+
 # State variables
 var current_speed = WALK_SPEED
 var mounted = false
 var horse_in_area = false
+
+var footstep_sounds = [
+	preload("res://audio/player/footstep1.ogg"),
+	preload("res://audio/player/footstep2.ogg"),
+]
 
 # Main game loop
 func _process(delta):
@@ -58,6 +67,11 @@ func handle_movement(delta):
 			player_mounted_animated_sprite.play("mounted_walk")
 		else: 
 			player_animated_sprite.play("walk")
+			
+		if footstep_timer.is_stopped():
+			footstep_audio.stream = footstep_sounds[randi() % footstep_sounds.size()]
+			footstep_audio.play()
+			footstep_timer.start(0.8)
 	else:
 		if mounted:
 			player_mounted_animated_sprite.play("mounted_idle")

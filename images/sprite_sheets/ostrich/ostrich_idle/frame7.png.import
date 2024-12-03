@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nw071wpwo0ye"
-path="res://.godot/imported/Pampa1.webp-d57fa3c38f270c84f2d73f0877c88101.ctex"
+uid="uid://sifjckbpok0s"
+path="res://.godot/imported/frame7.png-faed8d176d846f8aec162cd8b1f5860c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/Pampa1.webp"
-dest_files=["res://.godot/imported/Pampa1.webp-d57fa3c38f270c84f2d73f0877c88101.ctex"]
+source_file="res://images/sprite_sheets/ostrich/ostrich_idle/frame7.png"
+dest_files=["res://.godot/imported/frame7.png-faed8d176d846f8aec162cd8b1f5860c.ctex"]
 
 [params]
 

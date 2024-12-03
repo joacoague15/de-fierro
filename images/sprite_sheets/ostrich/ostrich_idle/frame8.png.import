@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://broul5cj6rrbk"
-path="res://.godot/imported/wall1.webp-6f2176cd2e29f1ca00b34c1a0281bc13.ctex"
+uid="uid://gh326r2mxkxs"
+path="res://.godot/imported/frame8.png-7e9015b653cb810c7b3f4372d32945f3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/wall1.webp"
-dest_files=["res://.godot/imported/wall1.webp-6f2176cd2e29f1ca00b34c1a0281bc13.ctex"]
+source_file="res://images/sprite_sheets/ostrich/ostrich_idle/frame8.png"
+dest_files=["res://.godot/imported/frame8.png-7e9015b653cb810c7b3f4372d32945f3.ctex"]
 
 [params]
 

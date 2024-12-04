@@ -1,4 +1,4 @@
-[gd_scene load_steps=105 format=3 uid="uid://23375gdktrf3"]
+[gd_scene load_steps=111 format=3 uid="uid://23375gdktrf3"]
 
 [ext_resource type="Texture2D" uid="uid://cw1thtf1fycrg" path="res://images/environment/Pampa.jpeg" id="1_1mvgs"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="2_0ps76"]
@@ -98,6 +98,12 @@
 [ext_resource type="Texture2D" uid="uid://di3jqkni0a7sp" path="res://images/sprite_sheets/ostrich/ostrich_walking/frame11.png" id="96_dg0s0"]
 [ext_resource type="Texture2D" uid="uid://cjqxkh4lewfdx" path="res://images/sprite_sheets/ostrich/ostrich_walking/frame12.png" id="97_vr2fy"]
 [ext_resource type="Texture2D" uid="uid://cf83wbphep5m4" path="res://images/sprite_sheets/ostrich/ostrich_walking/frame13.png" id="98_f4p8g"]
+[ext_resource type="Texture2D" uid="uid://cbn50vc56u70o" path="res://images/buildings/House1.png" id="99_u4swa"]
+[ext_resource type="Texture2D" uid="uid://57vih0j5rj3u" path="res://images/buildings/House2.png" id="100_dc1ef"]
+[ext_resource type="Texture2D" uid="uid://k1vydlcxvc1y" path="res://images/buildings/House3.png" id="101_sfgrb"]
+[ext_resource type="Texture2D" uid="uid://d3k3gfuho7b8l" path="res://images/buildings/Shop1.png" id="102_1c5wl"]
+[ext_resource type="Texture2D" uid="uid://b5pqencbggh7j" path="res://images/buildings/Barn.png" id="103_eu5ga"]
+[ext_resource type="Texture2D" uid="uid://sm87dce30l6s" path="res://images/buildings/TrainStation.png" id="104_8a0kg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4bbdy"]
 size = Vector2(17, 39)
@@ -464,6 +470,28 @@ position = Vector2(1202, 303)
 scale = Vector2(0.173828, 0.173828)
 texture = ExtResource("1_1mvgs")
 
+[node name="Pampa6" type="Sprite2D" parent="."]
+position = Vector2(1480, 303)
+scale = Vector2(0.173828, 0.173828)
+texture = ExtResource("1_1mvgs")
+flip_h = true
+
+[node name="Pampa7" type="Sprite2D" parent="."]
+position = Vector2(1758, 303)
+scale = Vector2(0.173828, 0.173828)
+texture = ExtResource("1_1mvgs")
+
+[node name="Pampa8" type="Sprite2D" parent="."]
+position = Vector2(2036, 303)
+scale = Vector2(0.173828, 0.173828)
+texture = ExtResource("1_1mvgs")
+flip_h = true
+
+[node name="Pampa9" type="Sprite2D" parent="."]
+position = Vector2(2314, 303)
+scale = Vector2(0.173828, 0.173828)
+texture = ExtResource("1_1mvgs")
+
 [node name="Player" type="Node2D" parent="."]
 script = ExtResource("2_0ps76")
 
@@ -492,7 +520,7 @@ position = Vector2(64, 314)
 scale = Vector2(0.04, 0.04)
 sprite_frames = SubResource("SpriteFrames_4xwvc")
 animation = &"walk"
-frame_progress = 0.592172
+frame_progress = 0.562262
 
 [node name="PlayerMountedAnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
 visible = false
@@ -554,10 +582,45 @@ position = Vector2(210, 316)
 scale = Vector2(0.035, 0.035)
 sprite_frames = SubResource("SpriteFrames_qjxye")
 animation = &"idle"
-frame_progress = 0.0682236
+frame_progress = 0.0383138
 flip_h = true
 
 [node name="OstrichTimer" type="Timer" parent="Ostrich"]
+
+[node name="House1" type="Sprite2D" parent="."]
+position = Vector2(1198, 307)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("99_u4swa")
+
+[node name="House2" type="Sprite2D" parent="."]
+position = Vector2(1290, 302)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("100_dc1ef")
+
+[node name="House3" type="Sprite2D" parent="."]
+position = Vector2(1400, 302)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("101_sfgrb")
+
+[node name="House4" type="Sprite2D" parent="."]
+position = Vector2(1500, 307)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("99_u4swa")
+
+[node name="Shop1" type="Sprite2D" parent="."]
+position = Vector2(1600, 305)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("102_1c5wl")
+
+[node name="Barn1" type="Sprite2D" parent="."]
+position = Vector2(1800, 305)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("103_eu5ga")
+
+[node name="TrainStation" type="Sprite2D" parent="."]
+position = Vector2(2300, 305)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("104_8a0kg")
 
 [connection signal="area_entered" from="Player/PlayerArea2D" to="Player" method="_on_player_area_2d_area_entered"]
 [connection signal="area_exited" from="Player/PlayerArea2D" to="Player" method="_on_player_area_2d_area_exited"]

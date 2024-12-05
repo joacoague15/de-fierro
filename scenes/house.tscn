@@ -1,4 +1,4 @@
-[gd_scene load_steps=111 format=3 uid="uid://23375gdktrf3"]
+[gd_scene load_steps=123 format=3 uid="uid://23375gdktrf3"]
 
 [ext_resource type="Texture2D" uid="uid://cw1thtf1fycrg" path="res://images/environment/Pampa.jpeg" id="1_1mvgs"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="2_0ps76"]
@@ -73,6 +73,17 @@
 [ext_resource type="Texture2D" uid="uid://b01hqg4fsqsyw" path="res://images/sprite_sheets/horse/idle_2/frame13.png" id="50_e774o"]
 [ext_resource type="Texture2D" uid="uid://dl05mbthrw4lv" path="res://images/sprite_sheets/horse/idle_2/frame14.png" id="51_etjff"]
 [ext_resource type="Texture2D" uid="uid://dwf368f6ptvho" path="res://images/sprite_sheets/horse/idle_2/frame15.png" id="52_q6beg"]
+[ext_resource type="Texture2D" uid="uid://c61ce5qsi8tl7" path="res://images/sprite_sheets/smoke/frame1.png" id="59_423dg"]
+[ext_resource type="Texture2D" uid="uid://cklry1kv14rsy" path="res://images/sprite_sheets/smoke/frame2.png" id="60_3g6s5"]
+[ext_resource type="Texture2D" uid="uid://6pthc6p132qm" path="res://images/sprite_sheets/smoke/frame3.png" id="61_6pfwa"]
+[ext_resource type="Texture2D" uid="uid://coi5ldk3cdmfe" path="res://images/sprite_sheets/smoke/frame4.png" id="62_wjcgy"]
+[ext_resource type="Texture2D" uid="uid://dswoauvuan4bh" path="res://images/sprite_sheets/smoke/frame5.png" id="63_j13p3"]
+[ext_resource type="Texture2D" uid="uid://dyc7uwdon0hn7" path="res://images/sprite_sheets/smoke/frame6.png" id="64_45ydy"]
+[ext_resource type="Texture2D" uid="uid://dhmh2h1vnuvib" path="res://images/sprite_sheets/smoke/frame7.png" id="65_d3llu"]
+[ext_resource type="Texture2D" uid="uid://bqvxihim3oj66" path="res://images/sprite_sheets/smoke/frame8.png" id="66_eus1p"]
+[ext_resource type="Texture2D" uid="uid://7d6q1palummk" path="res://images/sprite_sheets/smoke/frame9.png" id="67_rsfbv"]
+[ext_resource type="Texture2D" uid="uid://chlpx2gwmy6wv" path="res://images/sprite_sheets/smoke/frame10.png" id="68_0tqf3"]
+[ext_resource type="Texture2D" uid="uid://bhclie2p7bwev" path="res://images/sprite_sheets/smoke/frame11.png" id="69_qe5su"]
 [ext_resource type="AudioStream" uid="uid://dl3yrla45fyaj" path="res://audio/horse/horse_snort_1.ogg" id="73_5hb2x"]
 [ext_resource type="AudioStream" uid="uid://haqljfap2si8" path="res://audio/environment/environment_sounds_1.ogg" id="73_x66eo"]
 [ext_resource type="Texture2D" uid="uid://b678cutyskh7d" path="res://images/controls/Letter_A.png" id="75_xgswg"]
@@ -104,149 +115,6 @@
 [ext_resource type="Texture2D" uid="uid://d3k3gfuho7b8l" path="res://images/buildings/Shop1.png" id="102_1c5wl"]
 [ext_resource type="Texture2D" uid="uid://b5pqencbggh7j" path="res://images/buildings/Barn.png" id="103_eu5ga"]
 [ext_resource type="Texture2D" uid="uid://sm87dce30l6s" path="res://images/buildings/TrainStation.png" id="104_8a0kg"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4bbdy"]
-size = Vector2(17, 39)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_4xwvc"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("9_bh18k")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_gtwgj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_jhfex")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_vo2bv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_707o0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_jbt33")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_bh18k")
-}],
-"loop": true,
-"name": &"walk",
-"speed": 12.0
-}]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ctqqg"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("10_xly0y")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_r3he0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_b72h5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_8snjc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_3lxuu")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_mwggd")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_nktx3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_3ytd5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_s2vri")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_yelf3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("21_6uopg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("22_ulrvk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_y4vxe")
-}, {
-"duration": 1.0,
-"texture": ExtResource("24_tmv1k")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_j4ecw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_f1v6j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("27_k8kn6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("28_8njff")
-}, {
-"duration": 1.0,
-"texture": ExtResource("29_2oy5j")
-}],
-"loop": true,
-"name": &"mounted_idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("11_if4sv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_7m5dg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_wakss")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_4k1fy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_ob3yg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_em78n")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_vhs0e")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_lkafh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_ldmli")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_n45ho")
-}, {
-"duration": 1.0,
-"texture": ExtResource("21_aum4b")
-}, {
-"duration": 1.0,
-"texture": ExtResource("22_md83i")
-}],
-"loop": true,
-"name": &"mounted_walk",
-"speed": 5.0
-}]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8gkaa"]
 animations = [{
@@ -435,6 +303,190 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_dgm3h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("59_423dg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_3g6s5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_6pfwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_wjcgy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_j13p3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_45ydy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_d3llu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_eus1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_rsfbv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_0tqf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_qe5su")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4bbdy"]
+size = Vector2(17, 39)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4xwvc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_bh18k")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_gtwgj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jhfex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_vo2bv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_707o0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jbt33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bh18k")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 12.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ctqqg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_xly0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_r3he0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_b72h5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_8snjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_3lxuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_mwggd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_nktx3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_3ytd5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_s2vri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_yelf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_6uopg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ulrvk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_y4vxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_tmv1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_j4ecw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_f1v6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_k8kn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_8njff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_2oy5j")
+}],
+"loop": true,
+"name": &"mounted_idle",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_if4sv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_7m5dg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_wakss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_4k1fy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ob3yg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_em78n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_vhs0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_lkafh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ldmli")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_n45ho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_aum4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_md83i")
+}],
+"loop": true,
+"name": &"mounted_walk",
+"speed": 12.0
+}]
+
 [node name="Node2D" type="Node2D"]
 
 [node name="Pampa0" type="Sprite2D" parent="."]
@@ -492,51 +544,6 @@ position = Vector2(2314, 303)
 scale = Vector2(0.173828, 0.173828)
 texture = ExtResource("1_1mvgs")
 
-[node name="Player" type="Node2D" parent="."]
-script = ExtResource("2_0ps76")
-
-[node name="PlayerArea2D" type="Area2D" parent="Player"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/PlayerArea2D"]
-position = Vector2(58.5, 316)
-shape = SubResource("RectangleShape2D_4bbdy")
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-offset = Vector2(60, 310)
-zoom = Vector2(5, 5)
-
-[node name="HungerIcon" type="Sprite2D" parent="Player/Camera2D"]
-position = Vector2(162, 364)
-scale = Vector2(0.025, 0.025)
-texture = ExtResource("4_yufm3")
-
-[node name="MoneyIcon" type="Sprite2D" parent="Player/Camera2D"]
-position = Vector2(135, 364)
-scale = Vector2(0.022, 0.022)
-texture = ExtResource("5_uw3x2")
-
-[node name="PlayerAnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
-position = Vector2(64, 314)
-scale = Vector2(0.04, 0.04)
-sprite_frames = SubResource("SpriteFrames_4xwvc")
-animation = &"walk"
-frame_progress = 0.562262
-
-[node name="PlayerMountedAnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
-visible = false
-position = Vector2(73, 307)
-scale = Vector2(0.068, 0.068)
-sprite_frames = SubResource("SpriteFrames_ctqqg")
-animation = &"mounted_idle"
-flip_h = true
-
-[node name="FootstepAudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Player"]
-stream = ExtResource("41_3xa8d")
-
-[node name="FootstepTimer" type="Timer" parent="Player"]
-wait_time = 0.4
-one_shot = true
-
 [node name="Horse" type="Node2D" parent="."]
 script = ExtResource("5_00a7k")
 
@@ -544,9 +551,7 @@ script = ExtResource("5_00a7k")
 position = Vector2(33, 312)
 scale = Vector2(0.13, 0.13)
 sprite_frames = SubResource("SpriteFrames_8gkaa")
-animation = &"reaction_2"
-frame = 14
-frame_progress = 1.0
+animation = &"reaction_1"
 flip_h = true
 
 [node name="HorseArea2D" type="Area2D" parent="Horse"]
@@ -587,25 +592,79 @@ flip_h = true
 
 [node name="OstrichTimer" type="Timer" parent="Ostrich"]
 
+[node name="Ostrich2" type="Node2D" parent="."]
+script = ExtResource("78_hk1r7")
+
+[node name="OstrichAnimatedSprite2D" type="AnimatedSprite2D" parent="Ostrich2"]
+position = Vector2(280, 316)
+scale = Vector2(0.035, 0.035)
+sprite_frames = SubResource("SpriteFrames_qjxye")
+animation = &"idle"
+frame_progress = 0.0383138
+flip_h = true
+
+[node name="OstrichTimer" type="Timer" parent="Ostrich2"]
+
+[node name="Ostrich3" type="Node2D" parent="."]
+script = ExtResource("78_hk1r7")
+
+[node name="OstrichAnimatedSprite2D" type="AnimatedSprite2D" parent="Ostrich3"]
+position = Vector2(340, 316)
+scale = Vector2(0.035, 0.035)
+sprite_frames = SubResource("SpriteFrames_qjxye")
+animation = &"idle"
+frame_progress = 0.0383138
+flip_h = true
+
+[node name="OstrichTimer" type="Timer" parent="Ostrich3"]
+
 [node name="House1" type="Sprite2D" parent="."]
 position = Vector2(1198, 307)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("99_u4swa")
+
+[node name="SmokeAnimatedSprite2D" type="AnimatedSprite2D" parent="House1"]
+position = Vector2(300, -370)
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_dgm3h")
+autoplay = "default"
+frame_progress = 0.397919
 
 [node name="House2" type="Sprite2D" parent="."]
 position = Vector2(1290, 302)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("100_dc1ef")
 
+[node name="SmokeAnimatedSprite2D" type="AnimatedSprite2D" parent="House2"]
+position = Vector2(320, -390)
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_dgm3h")
+autoplay = "default"
+frame_progress = 0.414442
+
 [node name="House3" type="Sprite2D" parent="."]
 position = Vector2(1400, 302)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("101_sfgrb")
 
+[node name="SmokeAnimatedSprite2D3" type="AnimatedSprite2D" parent="House3"]
+position = Vector2(300, -490)
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_dgm3h")
+autoplay = "default"
+frame_progress = 0.000707945
+
 [node name="House4" type="Sprite2D" parent="."]
 position = Vector2(1500, 307)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("99_u4swa")
+
+[node name="SmokeAnimatedSprite2D" type="AnimatedSprite2D" parent="House4"]
+position = Vector2(300, -370)
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_dgm3h")
+autoplay = "default"
+frame_progress = 0.366227
 
 [node name="Shop1" type="Sprite2D" parent="."]
 position = Vector2(1600, 305)
@@ -622,9 +681,55 @@ position = Vector2(2300, 305)
 scale = Vector2(0.07, 0.07)
 texture = ExtResource("104_8a0kg")
 
-[connection signal="area_entered" from="Player/PlayerArea2D" to="Player" method="_on_player_area_2d_area_entered"]
-[connection signal="area_exited" from="Player/PlayerArea2D" to="Player" method="_on_player_area_2d_area_exited"]
+[node name="Player" type="Node2D" parent="."]
+script = ExtResource("2_0ps76")
+
+[node name="PlayerArea2D" type="Area2D" parent="Player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/PlayerArea2D"]
+position = Vector2(58.5, 316)
+shape = SubResource("RectangleShape2D_4bbdy")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2(60, 310)
+zoom = Vector2(5, 5)
+
+[node name="HungerIcon" type="Sprite2D" parent="Player/Camera2D"]
+position = Vector2(162, 364)
+scale = Vector2(0.025, 0.025)
+texture = ExtResource("4_yufm3")
+
+[node name="MoneyIcon" type="Sprite2D" parent="Player/Camera2D"]
+position = Vector2(135, 364)
+scale = Vector2(0.022, 0.022)
+texture = ExtResource("5_uw3x2")
+
+[node name="PlayerAnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+position = Vector2(64, 314)
+scale = Vector2(0.04, 0.04)
+sprite_frames = SubResource("SpriteFrames_4xwvc")
+animation = &"idle"
+
+[node name="PlayerMountedAnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+visible = false
+position = Vector2(73, 307)
+scale = Vector2(0.068, 0.068)
+sprite_frames = SubResource("SpriteFrames_ctqqg")
+animation = &"mounted_walk"
+flip_h = true
+
+[node name="FootstepAudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Player"]
+stream = ExtResource("41_3xa8d")
+
+[node name="FootstepTimer" type="Timer" parent="Player"]
+wait_time = 0.4
+one_shot = true
+
 [connection signal="area_entered" from="Horse/HorseArea2D" to="Horse" method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Horse/HorseArea2D" to="Horse" method="_on_area_2d_area_exited"]
 [connection signal="timeout" from="Horse/ReactionTimer" to="Horse" method="_on_reaction_timer_timeout"]
 [connection signal="timeout" from="Ostrich/OstrichTimer" to="Ostrich" method="_on_ostrich_timer_timeout"]
+[connection signal="timeout" from="Ostrich2/OstrichTimer" to="Ostrich2" method="_on_ostrich_timer_timeout"]
+[connection signal="timeout" from="Ostrich3/OstrichTimer" to="Ostrich3" method="_on_ostrich_timer_timeout"]
+[connection signal="area_entered" from="Player/PlayerArea2D" to="Player" method="_on_player_area_2d_area_entered"]
+[connection signal="area_exited" from="Player/PlayerArea2D" to="Player" method="_on_player_area_2d_area_exited"]

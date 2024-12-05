@@ -1,33 +1,51 @@
-[gd_scene load_steps=123 format=3 uid="uid://23375gdktrf3"]
+[gd_scene load_steps=142 format=3 uid="uid://23375gdktrf3"]
 
 [ext_resource type="Texture2D" uid="uid://cw1thtf1fycrg" path="res://images/environment/Pampa.jpeg" id="1_1mvgs"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="2_0ps76"]
+[ext_resource type="Texture2D" uid="uid://8n1xc5hvb4r" path="res://images/sprite_sheets/bushes/frame2.png" id="2_lhjj2"]
+[ext_resource type="Texture2D" uid="uid://b85bf1wj6qila" path="res://images/sprite_sheets/bushes/frame3.png" id="3_sn3ka"]
 [ext_resource type="Texture2D" uid="uid://uahm7kte0wbs" path="res://images/sprite_sheets/gaucho_walking/frame1.png" id="4_gtwgj"]
 [ext_resource type="Texture2D" uid="uid://ctc44komt5g8j" path="res://images/statuses/Hunger.png" id="4_yufm3"]
+[ext_resource type="Texture2D" uid="uid://ulg5y27n11lm" path="res://images/sprite_sheets/bushes/frame4.png" id="4_yweki"]
 [ext_resource type="Script" path="res://scripts/horse.gd" id="5_00a7k"]
 [ext_resource type="Texture2D" uid="uid://dsemjodahn82k" path="res://images/sprite_sheets/gaucho_walking/frame2.png" id="5_jhfex"]
+[ext_resource type="Texture2D" uid="uid://cfwqv340it6np" path="res://images/sprite_sheets/bushes/frame5.png" id="5_txutr"]
 [ext_resource type="Texture2D" uid="uid://bbksdeg1yxc0q" path="res://images/statuses/Money.png" id="5_uw3x2"]
 [ext_resource type="Texture2D" uid="uid://m82hm1mbi38i" path="res://images/sprite_sheets/gaucho_walking/frame3.png" id="6_vo2bv"]
+[ext_resource type="Texture2D" uid="uid://c6il5ynr8cdek" path="res://images/sprite_sheets/bushes/frame7.png" id="6_ycvvt"]
+[ext_resource type="Texture2D" uid="uid://dqn7dfcj6srgh" path="res://images/sprite_sheets/bushes/frame8.png" id="7_2ng05"]
 [ext_resource type="Texture2D" uid="uid://6h0k04fqtdmt" path="res://images/sprite_sheets/gaucho_walking/frame4.png" id="7_707o0"]
+[ext_resource type="Texture2D" uid="uid://dt17gxlx7c6s0" path="res://images/sprite_sheets/bushes/frame9.png" id="8_1g3tu"]
 [ext_resource type="Texture2D" uid="uid://fsfefrib0acl" path="res://images/sprite_sheets/gaucho_walking/frame5.png" id="8_jbt33"]
 [ext_resource type="Texture2D" uid="uid://gkqjuuhu5qev" path="res://images/sprite_sheets/gaucho_walking/frame6.png" id="9_bh18k"]
+[ext_resource type="Texture2D" uid="uid://5dabarlsm2wy" path="res://images/sprite_sheets/bushes/frame10.png" id="9_lp3mf"]
+[ext_resource type="Texture2D" uid="uid://ce3ousy60e6sx" path="res://images/sprite_sheets/bushes/frame11.png" id="10_xkxph"]
 [ext_resource type="Texture2D" uid="uid://d4bkk7s0lrif1" path="res://images/sprite_sheets/gaucho_mounted_idle/frame1.png" id="10_xly0y"]
+[ext_resource type="Texture2D" uid="uid://cbmyvu5dka70e" path="res://images/sprite_sheets/bushes/frame12.png" id="11_2y8lr"]
 [ext_resource type="Texture2D" uid="uid://dlnybg26jv4b8" path="res://images/sprite_sheets/gaucho_mounted_walking/frame1.png" id="11_if4sv"]
 [ext_resource type="Texture2D" uid="uid://8cy7egjtdcfi" path="res://images/sprite_sheets/gaucho_mounted_idle/frame2.png" id="11_r3he0"]
+[ext_resource type="Texture2D" uid="uid://bgnm60v7kcsld" path="res://images/sprite_sheets/bushes/frame13.png" id="12_4xna1"]
 [ext_resource type="Texture2D" uid="uid://d2qu07056wo8a" path="res://images/sprite_sheets/gaucho_mounted_walking/frame2.png" id="12_7m5dg"]
 [ext_resource type="Texture2D" uid="uid://ca7b33eamqrv1" path="res://images/sprite_sheets/gaucho_mounted_idle/frame3.png" id="12_b72h5"]
 [ext_resource type="Texture2D" uid="uid://c4142exokcrhk" path="res://images/sprite_sheets/gaucho_mounted_idle/frame4.png" id="13_8snjc"]
+[ext_resource type="Texture2D" uid="uid://dflt4cj8m82bp" path="res://images/sprite_sheets/bushes/frame14.png" id="13_hyvyt"]
 [ext_resource type="Texture2D" uid="uid://biwkwqk4odtja" path="res://images/sprite_sheets/gaucho_mounted_walking/frame3.png" id="13_wakss"]
 [ext_resource type="Texture2D" uid="uid://iiu66i6m2s4d" path="res://images/sprite_sheets/gaucho_mounted_idle/frame5.png" id="14_3lxuu"]
 [ext_resource type="Texture2D" uid="uid://brd1yvqn24mod" path="res://images/sprite_sheets/gaucho_mounted_walking/frame4.png" id="14_4k1fy"]
+[ext_resource type="Texture2D" uid="uid://d0tot387j6ce0" path="res://images/sprite_sheets/bushes/frame15.png" id="14_qurhx"]
 [ext_resource type="Texture2D" uid="uid://dbcnmv0crnejd" path="res://images/sprite_sheets/gaucho_mounted_walking/frame5.png" id="15_ob3yg"]
+[ext_resource type="Texture2D" uid="uid://c7tolqv0uceiw" path="res://images/sprite_sheets/bushes/frame16.png" id="15_ujkqm"]
+[ext_resource type="Texture2D" uid="uid://be6ulqftbddul" path="res://images/sprite_sheets/bushes/frame17.png" id="16_7u0oy"]
 [ext_resource type="Texture2D" uid="uid://roi62rkotvur" path="res://images/sprite_sheets/gaucho_mounted_walking/frame6.png" id="16_em78n"]
 [ext_resource type="Texture2D" uid="uid://dtsaht2yaq6wd" path="res://images/sprite_sheets/gaucho_mounted_idle/frame7.png" id="16_mwggd"]
+[ext_resource type="Texture2D" uid="uid://n7ybrb6m3oex" path="res://images/sprite_sheets/bushes/frame18.png" id="17_5omcv"]
 [ext_resource type="Texture2D" uid="uid://dakpext21vnwv" path="res://images/sprite_sheets/gaucho_mounted_idle/frame8.png" id="17_nktx3"]
 [ext_resource type="Texture2D" uid="uid://d32v4ifao4skh" path="res://images/sprite_sheets/gaucho_mounted_walking/frame7.png" id="17_vhs0e"]
 [ext_resource type="Texture2D" uid="uid://cvpi7l0gvrhy3" path="res://images/sprite_sheets/gaucho_mounted_idle/frame9.png" id="18_3ytd5"]
 [ext_resource type="Texture2D" uid="uid://dlprxe42wsx5q" path="res://images/sprite_sheets/gaucho_mounted_walking/frame8.png" id="18_lkafh"]
+[ext_resource type="Texture2D" uid="uid://cojfc0lsfd7pe" path="res://images/sprite_sheets/bushes/frame19.png" id="18_y6a6f"]
 [ext_resource type="Texture2D" uid="uid://22j0auqj1p10" path="res://images/sprite_sheets/gaucho_mounted_walking/frame9.png" id="19_ldmli"]
+[ext_resource type="Texture2D" uid="uid://bp4rrwnodi55e" path="res://images/sprite_sheets/bushes/frame20.png" id="19_pi24r"]
 [ext_resource type="Texture2D" uid="uid://d0nhmcscduu2w" path="res://images/sprite_sheets/gaucho_mounted_idle/frame10.png" id="19_s2vri"]
 [ext_resource type="Texture2D" uid="uid://bs0j2bfafsk4u" path="res://images/sprite_sheets/gaucho_mounted_walking/frame10.png" id="20_n45ho"]
 [ext_resource type="Texture2D" uid="uid://dmynpuwdhin5f" path="res://images/sprite_sheets/gaucho_mounted_idle/frame11.png" id="20_yelf3"]
@@ -115,6 +133,68 @@
 [ext_resource type="Texture2D" uid="uid://d3k3gfuho7b8l" path="res://images/buildings/Shop1.png" id="102_1c5wl"]
 [ext_resource type="Texture2D" uid="uid://b5pqencbggh7j" path="res://images/buildings/Barn.png" id="103_eu5ga"]
 [ext_resource type="Texture2D" uid="uid://sm87dce30l6s" path="res://images/buildings/TrainStation.png" id="104_8a0kg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k8hq3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_lhjj2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sn3ka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_yweki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_txutr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ycvvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2ng05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1g3tu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_lp3mf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xkxph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2y8lr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4xna1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_hyvyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_qurhx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ujkqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_7u0oy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_5omcv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_y6a6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_pi24r")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8gkaa"]
 animations = [{
@@ -544,6 +624,88 @@ position = Vector2(2314, 303)
 scale = Vector2(0.173828, 0.173828)
 texture = ExtResource("1_1mvgs")
 
+[node name="BushesAnimatedSprite2D0" type="AnimatedSprite2D" parent="."]
+position = Vector2(-223.48, 358)
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_k8hq3")
+autoplay = "default"
+frame_progress = 0.176103
+flip_h = true
+
+[node name="BushesAnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(56, 358)
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_k8hq3")
+autoplay = "default"
+frame_progress = 0.225312
+
+[node name="BushesAnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(326.48, 358)
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_k8hq3")
+autoplay = "default"
+frame_progress = 0.0602239
+flip_h = true
+
+[node name="BushesAnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+position = Vector2(614, 358)
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_k8hq3")
+autoplay = "default"
+frame_progress = 0.381331
+
+[node name="BushesAnimatedSprite2D4" type="AnimatedSprite2D" parent="."]
+position = Vector2(902, 358)
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_k8hq3")
+autoplay = "default"
+frame_progress = 0.381331
+flip_h = true
+
+[node name="BushesAnimatedSprite2D5" type="AnimatedSprite2D" parent="."]
+position = Vector2(1190, 358)
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_k8hq3")
+autoplay = "default"
+frame_progress = 0.381331
+
+[node name="BushesAnimatedSprite2D6" type="AnimatedSprite2D" parent="."]
+position = Vector2(1400, 358)
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_k8hq3")
+autoplay = "default"
+frame_progress = 0.381331
+
+[node name="BushesAnimatedSprite2D7" type="AnimatedSprite2D" parent="."]
+position = Vector2(1680, 358)
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_k8hq3")
+autoplay = "default"
+frame_progress = 0.381331
+flip_h = true
+
+[node name="BushesAnimatedSprite2D8" type="AnimatedSprite2D" parent="."]
+position = Vector2(1800, 358)
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_k8hq3")
+autoplay = "default"
+frame_progress = 0.381331
+
+[node name="BushesAnimatedSprite2D9" type="AnimatedSprite2D" parent="."]
+position = Vector2(2088, 358)
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_k8hq3")
+autoplay = "default"
+frame_progress = 0.381331
+flip_h = true
+
+[node name="BushesAnimatedSprite2D10" type="AnimatedSprite2D" parent="."]
+position = Vector2(2320, 358)
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_k8hq3")
+autoplay = "default"
+frame_progress = 0.381331
+
 [node name="Horse" type="Node2D" parent="."]
 script = ExtResource("5_00a7k")
 
@@ -693,13 +855,16 @@ shape = SubResource("RectangleShape2D_4bbdy")
 [node name="Camera2D" type="Camera2D" parent="Player"]
 offset = Vector2(60, 310)
 zoom = Vector2(5, 5)
+position_smoothing_enabled = true
 
 [node name="HungerIcon" type="Sprite2D" parent="Player/Camera2D"]
+visible = false
 position = Vector2(162, 364)
 scale = Vector2(0.025, 0.025)
 texture = ExtResource("4_yufm3")
 
 [node name="MoneyIcon" type="Sprite2D" parent="Player/Camera2D"]
+visible = false
 position = Vector2(135, 364)
 scale = Vector2(0.022, 0.022)
 texture = ExtResource("5_uw3x2")
